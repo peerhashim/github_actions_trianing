@@ -3,9 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      /* NAVBAR */
+      header {
+        position: fixed;
+        width: 100%;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(10px);
+      }
+
+      header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #38bdf8;
+      }
+
+      nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #38bdf8;
+      }
+
+      /* HERO SECTION */
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      .hero span {
+        color: #38bdf8;
+      }
+
+      .hero p {
+        margin-top: 20px;
+        font-size: 18px;
+        opacity: 0;
+        animation: fadeInUp 1.5s ease forwards;
+      }
+
+      .btn {
+        margin-top: 30px;
+        padding: 12px 30px;
+        background: #38bdf8;
+        border: none;
+        border-radius: 30px;
+        color: black;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+        animation: fadeInUp 2s ease forwards;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        background: #0ea5e9;
+      }
+
+      /* FLOATING BACKGROUND */
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(56, 189, 248, 0.2);
+        animation: float 10s infinite ease-in-out;
+      }
+
+      .bubble:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      .bubble:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        right: 15%;
+        animation-delay: 2s;
+      }
+
+      .bubble:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        bottom: 10%;
+        left: 20%;
+        animation-delay: 4s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ABOUT SECTION */
+      .about {
+        padding: 100px 10%;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        max-width: 600px;
+        margin: auto;
+        color: #cbd5f5;
+      }
+
+      /* PROJECTS */
+      .projects {
+        padding: 100px 10%;
+      }
+
+      .projects h2 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      /* FOOTER */
+      footer {
+        padding: 20px;
+        text-align: center;
+        background: #020617;
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .hero h2 {
+          font-size: 32px;
+        }
+
+        header {
+          padding: 15px 5%;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    Git hub actions.
+    <header>
+      <h1>PeerHashim</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Hello, I'm <span>Peer Hashim</span></h2>
+        <p>.NET Developer | Angular | Cloud Enthusiast</p>
+        <button class="btn">View Work</button>
+      </div>
+
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer focused on building scalable web applications
+        using .NET, Angular, and cloud technologies. I love solving real-world
+        problems and creating modern user experiences.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Peer Hashim | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
