@@ -16,3 +16,6 @@ jobs:
 
       - name: Run test
         run: node test.js
+
+      - name: Force fail
+        run: exit 1
