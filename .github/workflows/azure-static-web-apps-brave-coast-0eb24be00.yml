@@ -19,9 +19,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run test (intentional fail)
-        run: node -e "throw new Error('Failing test intentionally ❌')"
-
   # 🚀 DEPLOY JOB (runs only if test passes)
   build_and_deploy_job:
     needs: test # 👈 IMPORTANT (dependency)
