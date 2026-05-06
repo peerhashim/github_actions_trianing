@@ -3,18 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peer Hashim | Portfolio</title>
+
+    <!-- SEO -->
+    <title>Peer Hashim | Software Engineer | .NET Developer</title>
+    <meta
+      name="description"
+      content="Peer Hashim is a Software Engineer specializing in .NET, Angular, Azure, SQL, backend development, scalable applications, APIs and cloud solutions."
+    />
+    <meta
+      name="keywords"
+      content="Peer Hashim, Peer Hashim developer, Peer Hashim software engineer, .NET developer, Angular developer, Azure developer, SQL developer"
+    />
+    <meta name="author" content="Peer Hashim" />
+    <link rel="canonical" href="https://peerhashim.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Peer Hashim | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Peer Hashim - .NET, Angular, Azure Developer"
+    />
+    <meta property="og:url" content="https://peerhashim.com" />
+    <meta property="og:type" content="website" />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Devicon Icons -->
+    <!-- Devicon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
-    <!-- AOS Animation -->
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -33,9 +54,11 @@
     >
       <div class="flex items-center gap-4">
         <img
-          src="https://media.licdn.com/dms/image/v2/D5603AQExg17qyKz5Dw/profile-displayphoto-scale_200_200/B56Z3ZvAIjHAAc-/0/1777474475634?e=1779321600&v=beta&t=sjAQZ8Hqzt3deCVPIQ1iMCz7QThmeiW1GdKuvUDjViM"
+          src="https://media.licdn.com/dms/image/v2/D5603AQExg17qyKz5Dw/profile-displayphoto-scale_400_400/B56Z3ZvAIjHAAk-/0/1777474475634?e=1779926400&v=beta&t=1Bq5NrdNav6-M3Kocgl7QxGO37LpKraUKTLtBhaiITE"
+          alt="Peer Hashim"
           class="w-20 h-20 rounded-full border-2 border-blue-500 shadow-lg"
         />
+
         <div>
           <h1 class="text-3xl font-bold">Peer Hashim</h1>
           <p class="text-gray-400">Software Engineer</p>
@@ -45,12 +68,43 @@
       <div class="text-sm text-gray-400 mt-4 md:mt-0 space-y-1">
         <p>📞 +91 9596068926</p>
         <p>✉️ peerhashim369@gmail.com</p>
-        <p>🌐 LinkedIn: peerhashim</p>
+
+        <p>
+          🌐 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/peerhashim/"
+            target="_blank"
+            class="text-blue-400 hover:underline"
+          >
+            linkedin.com/in/peerhashim
+          </a>
+        </p>
+
+        <p>
+          💻 GitHub:
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="text-blue-400 hover:underline"
+          >
+            GitHub Profile
+          </a>
+        </p>
       </div>
     </header>
 
-    <!-- Experience -->
+    <!-- About -->
     <section class="p-8" data-aos="fade-up">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-300 leading-relaxed">
+        I am a Software Engineer specializing in backend development using .NET,
+        SQL, Azure, APIs, cloud deployment, and scalable systems. I also build
+        modern frontend applications using Angular.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="p-8 bg-gray-900" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-6">Experience</h2>
 
       <div class="mb-8">
@@ -69,36 +123,29 @@
         <h3 class="text-xl font-bold text-blue-400">Aseef IT Holding Co.</h3>
         <p class="text-gray-400">Software Engineer | May 2024 – Oct 2025</p>
         <ul class="list-disc ml-6 mt-2 text-gray-300 space-y-1">
-          <li>Real-time chat using SignalR</li>
-          <li>API optimization: 4s → 800ms</li>
-          <li>Database redesign + migration</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-bold text-blue-400">Aseef IT Holding Co.</h3>
-        <p class="text-gray-400">Intern | Nov 2023 – Apr 2024</p>
-        <ul class="list-disc ml-6 mt-2 text-gray-300 space-y-1">
-          <li>Frontend → Backend transition (.NET + SQL)</li>
+          <li>Built real-time chat using SignalR</li>
+          <li>Optimized APIs from 4 seconds to 800ms</li>
+          <li>Database redesign and migrations</li>
         </ul>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="p-8 bg-gray-900" data-aos="zoom-in">
+    <section class="p-8" data-aos="zoom-in">
       <h2 class="text-2xl font-semibold mb-6">Projects</h2>
 
       <div
-        class="p-6 border border-gray-700 rounded-2xl hover:scale-105 transition duration-300 shadow-lg"
+        class="p-6 border border-gray-700 rounded-2xl shadow-lg hover:scale-105 transition duration-300"
       >
         <h3 class="text-xl font-bold">Meverse</h3>
+
         <p class="text-gray-300 mt-2">
-          Social platform with chat, posts, follow system & smart
-          recommendations using vectorized profile similarity.
+          Social platform featuring chat, posts, follow system, and smart
+          recommendations using vector similarity.
         </p>
 
         <p class="text-sm text-gray-400 mt-3">
-          Tech: Angular, .NET, ASP.NET, SQL, Dapper
+          Tech: Angular, .NET, SQL, Dapper, Azure
         </p>
 
         <div class="mt-4 flex gap-6">
@@ -109,54 +156,44 @@
     </section>
 
     <!-- Skills -->
-    <section class="p-8" data-aos="fade-up">
+    <section class="p-8 bg-gray-900" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-6">Skills</h2>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-angularjs-plain colored text-4xl"></i>
           <p>Angular</p>
         </div>
 
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-dotnetcore-plain colored text-4xl"></i>
           <p>.NET</p>
         </div>
 
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-azure-plain colored text-4xl"></i>
           <p>Azure</p>
         </div>
 
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-mysql-plain colored text-4xl"></i>
           <p>SQL</p>
         </div>
 
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
-          <i class="devicon-git-plain colored text-4xl"></i>
-          <p>Git</p>
-        </div>
-
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-docker-plain colored text-4xl"></i>
           <p>Docker</p>
         </div>
 
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
-          <i class="devicon-postman-plain colored text-4xl"></i>
-          <p>Postman</p>
-        </div>
-
-        <div class="p-4 bg-gray-900 rounded-xl hover:scale-110 transition">
+        <div class="p-4 bg-gray-800 rounded-xl">
           <i class="devicon-github-original text-4xl"></i>
-          <p>CI/CD</p>
+          <p>GitHub Actions</p>
         </div>
       </div>
     </section>
 
     <!-- Education -->
-    <section class="p-8 bg-gray-900" data-aos="fade-up">
+    <section class="p-8" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-4">Education</h2>
       <p>Islamia College of Science and Commerce</p>
       <p class="text-gray-400">Pass Out: 2023 | GPA: 6.9</p>
@@ -167,8 +204,22 @@
       © 2026 Peer Hashim | Built with ❤️
     </footer>
 
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Peer Hashim",
+        "url": "https://peerhashim.com",
+        "sameAs": ["https://www.linkedin.com/in/peerhashim/"],
+        "jobTitle": "Software Engineer"
+      }
+    </script>
+
     <script>
-      AOS.init({ duration: 1000 });
+      AOS.init({
+        duration: 1000,
+      });
     </script>
   </body>
 </html>
